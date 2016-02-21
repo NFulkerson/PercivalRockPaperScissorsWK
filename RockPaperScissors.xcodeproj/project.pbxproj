@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8EF477D1C798CF6005391C7 /* GameResultInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF477C1C798CF6005391C7 /* GameResultInterfaceController.swift */; };
+		D8EF477E1C798CF6005391C7 /* GameResultInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF477C1C798CF6005391C7 /* GameResultInterfaceController.swift */; };
 		D8FBA75A1C602E2700F5455E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FBA7591C602E2700F5455E /* AppDelegate.swift */; };
 		D8FBA75C1C602E2700F5455E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FBA75B1C602E2700F5455E /* ViewController.swift */; };
 		D8FBA75F1C602E2700F5455E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FBA75D1C602E2700F5455E /* Main.storyboard */; };
@@ -64,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D8EF477C1C798CF6005391C7 /* GameResultInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResultInterfaceController.swift; sourceTree = "<group>"; };
 		D8FBA7561C602E2700F5455E /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FBA7591C602E2700F5455E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8FBA75B1C602E2700F5455E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				D8FBA76D1C602E2700F5455E /* Interface.storyboard */,
+				D8EF477C1C798CF6005391C7 /* GameResultInterfaceController.swift */,
 				D8FBA7701C602E2700F5455E /* Assets.xcassets */,
 				D8FBA7721C602E2700F5455E /* Info.plist */,
 			);
@@ -287,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8FBA75C1C602E2700F5455E /* ViewController.swift in Sources */,
+				D8EF477D1C798CF6005391C7 /* GameResultInterfaceController.swift in Sources */,
 				D8FBA75A1C602E2700F5455E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8FBA77F1C602E2700F5455E /* ExtensionDelegate.swift in Sources */,
+				D8EF477E1C798CF6005391C7 /* GameResultInterfaceController.swift in Sources */,
 				D8FBA77D1C602E2700F5455E /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +531,7 @@
 				D8FBA7871C602E2700F5455E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8FBA7891C602E2700F5455E /* Build configuration list for PBXNativeTarget "RockPaperScissors WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +540,7 @@
 				D8FBA78B1C602E2700F5455E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8FBA78D1C602E2700F5455E /* Build configuration list for PBXNativeTarget "RockPaperScissors" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +549,7 @@
 				D8FBA78F1C602E2700F5455E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
