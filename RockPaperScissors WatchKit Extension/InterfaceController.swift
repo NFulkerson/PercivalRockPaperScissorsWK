@@ -55,38 +55,29 @@ class InterfaceController: WKInterfaceController {
         let computerChoice = Int(arc4random_uniform(3))
     
         if playerChoice == computerChoice {
-            tieState()
-        } else if playerChoice == 0 {
+            // tie
+        }
+        else if playerChoice == 0 {
             if computerChoice == 1 {
-                winState()
+                // win
             } else {
-                loseState()
+                // lose
             }
         } else if playerChoice == 1 {
             if computerChoice == 2 {
-                winState()
+                // win
             } else {
-                loseState()
+                // lose
             }
         } else if playerChoice == 2 {
             if computerChoice == 0 {
-                winState()
+                // win
             } else {
-                loseState()
+                // lose
             }
         }
     }
     
-    let confirmAction = WKAlertAction(title: "Okay", style: .Default, handler: {})
-    func winState() {
-        presentAlertControllerWithTitle("You Win!", message: "Hooray!", preferredStyle: .Alert, actions: [confirmAction])
-    }
-    func loseState() {
-        presentAlertControllerWithTitle("You Lose.", message: "Awww. :(", preferredStyle: .Alert, actions: [confirmAction])
-    }
-    func tieState() {
-        presentAlertControllerWithTitle("Tie!", message: "It's a tie.", preferredStyle: .Alert, actions: [confirmAction])
-    }
     
     
 }

@@ -22,6 +22,7 @@
                         <button width="120" alignment="center" title="Shoot!" id="tag-Zu-tRY">
                             <connections>
                                 <action selector="shoot" destination="AgC-eL-Hgc" id="3eW-x3-5fK"/>
+                                <segue destination="4u2-BH-3Zd" kind="modal" id="U0y-ok-Rno"/>
                             </connections>
                         </button>
                     </items>

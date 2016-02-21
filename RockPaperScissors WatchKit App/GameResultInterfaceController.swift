@@ -31,5 +31,7 @@ class GameResultInterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
+    
 
 }
