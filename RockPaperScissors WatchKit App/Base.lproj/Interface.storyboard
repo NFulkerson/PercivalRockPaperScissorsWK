@@ -21,8 +21,7 @@
                         </group>
                         <button width="120" alignment="center" title="Shoot!" id="tag-Zu-tRY">
                             <connections>
-                                <action selector="shoot" destination="AgC-eL-Hgc" id="3eW-x3-5fK"/>
-                                <segue destination="4u2-BH-3Zd" kind="modal" id="U0y-ok-Rno"/>
+                                <segue destination="4u2-BH-3Zd" kind="modal" identifier="gameResultSegue" id="Zfw-3g-gjL"/>
                             </connections>
                         </button>
                     </items>
@@ -36,7 +35,7 @@
         <!--Game Result Interface Controller-->
         <scene sceneID="R8k-SF-bbx">
             <objects>
-                <controller id="4u2-BH-3Zd" customClass="GameResultInterfaceController" customModule="RockPaperScissors">
+                <controller id="4u2-BH-3Zd" customClass="GameResultInterfaceController" customModule="RockPaperScissors_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.69999999999999996" alignment="left" id="OWs-DN-IW8">
                             <items>

@@ -18,8 +18,17 @@ class GameResultInterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        self.setTitle("Play Again")
+        
+        let player = (context as! NSDictionary)["player"] as? Int
+        let computer = (context as! NSDictionary)["computer"] as? Int
+        
+        let playerHand = Hands.types[player!]
+        let computerHand = Hands.types[computer!]
         
         // Configure interface objects here.
+        playerChoiceImage.setImageNamed("\(playerHand.rawValue).png")
+        computerChoiceImage.setImageNamed("\(computerHand.rawValue).png")
     }
 
     override func willActivate() {

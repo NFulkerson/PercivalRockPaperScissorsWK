@@ -14,27 +14,24 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet var rpsPicker: WKInterfacePicker!
     
-    var items: [(String, String)]! = [
-        ("Rock.png", "Rock"),
-        ("Scissors.png", "Scissors"),
-        ("Paper.png", "Paper")
-    ]
-    
     var playerChoice = 0
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
-        let pickerItems: [WKPickerItem] = items.map {
+        let pickerItems: [WKPickerItem] = Hands.types.map {
+            (let hand) in
             let pickerItem = WKPickerItem()
-            pickerItem.contentImage = WKImage(imageName: $0.0)
-            pickerItem.caption = $0.1
+            pickerItem.contentImage = WKImage(imageName: "\(hand.rawValue).png")
+            pickerItem.caption = hand.rawValue
             return pickerItem
         }
         
+        
         rpsPicker.setItems(pickerItems)
     }
+    
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
@@ -51,33 +48,19 @@ class InterfaceController: WKInterfaceController {
         playerChoice = value
     }
     
-    @IBAction func shoot() {
-        let computerChoice = Int(arc4random_uniform(3))
-    
-        if playerChoice == computerChoice {
-            // tie
+
+    override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject? {
+        print(segueIdentifier)
+        if segueIdentifier == "gameResultSegue" {
+            let computerChoice = Int(arc4random_uniform(3))
+            print("Computer picked \(computerChoice)")
+            let choices = ["player": playerChoice, "computer": computerChoice]
+            return choices
+        } else {
+            return ["player": 0, "computer": 0]
         }
-        else if playerChoice == 0 {
-            if computerChoice == 1 {
-                // win
-            } else {
-                // lose
-            }
-        } else if playerChoice == 1 {
-            if computerChoice == 2 {
-                // win
-            } else {
-                // lose
-            }
-        } else if playerChoice == 2 {
-            if computerChoice == 0 {
-                // win
-            } else {
-                // lose
-            }
-        }
+        
     }
-    
     
     
 }
