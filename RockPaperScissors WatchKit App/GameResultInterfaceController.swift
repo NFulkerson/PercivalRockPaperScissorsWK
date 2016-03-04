@@ -15,6 +15,7 @@ class GameResultInterfaceController: WKInterfaceController {
     
     @IBOutlet var playerChoiceImage: WKInterfaceImage!
     @IBOutlet var computerChoiceImage: WKInterfaceImage!
+    @IBOutlet var gameResultLabel: WKInterfaceLabel!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -29,6 +30,9 @@ class GameResultInterfaceController: WKInterfaceController {
         // Configure interface objects here.
         playerChoiceImage.setImageNamed("\(playerHand.rawValue).png")
         computerChoiceImage.setImageNamed("\(computerHand.rawValue).png")
+        
+        showResults(playerHand, computer: computerHand)
+        
     }
 
     override func willActivate() {
@@ -41,6 +45,20 @@ class GameResultInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    func showResults(player: Hands, computer: Hands) {
+        if player == computer {
+            gameResultLabel.setText("It's a tie!")
+            
+        }
+        else if (player == .Rock && computer == .Scissors) ||
+            (player == .Scissors && computer == .Paper) ||
+            (player == .Paper && computer == .Rock){
+            gameResultLabel.setText("You win!")
+        } else {
+            gameResultLabel.setText("You lose!")
+        }
+
+    }
     
 
 }

@@ -43,9 +43,11 @@
                                 <imageView width="0.5" height="0.59999999999999998" alignment="right" verticalAlignment="center" id="hP4-Cp-2yn"/>
                             </items>
                         </group>
+                        <label width="1" alignment="left" text="You win!" textAlignment="center" id="oA2-q1-DQN"/>
                     </items>
                     <connections>
                         <outlet property="computerChoiceImage" destination="hP4-Cp-2yn" id="lHo-rf-Iw7"/>
+                        <outlet property="gameResultLabel" destination="oA2-q1-DQN" id="jPH-QC-IP6"/>
                         <outlet property="playerChoiceImage" destination="JHU-hF-Ksr" id="fYt-pI-VA0"/>
                     </connections>
                 </controller>
