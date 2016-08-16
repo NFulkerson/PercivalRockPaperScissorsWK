@@ -15,7 +15,6 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var rpsPicker: WKInterfacePicker!
     
     var playerChoice = 0
-    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         

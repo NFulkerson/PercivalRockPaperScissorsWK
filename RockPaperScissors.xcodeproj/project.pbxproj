@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		D82966041C7D70FF00CDEF23 /* Hands.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82966031C7D70FF00CDEF23 /* Hands.swift */; };
 		D82966051C7D70FF00CDEF23 /* Hands.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82966031C7D70FF00CDEF23 /* Hands.swift */; };
+		D8652B291D3F587200B21F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FBA7701C602E2700F5455E /* Assets.xcassets */; };
+		D889092F1D48403300B208A9 /* HandSelectPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D889092E1D48403300B208A9 /* HandSelectPageViewController.swift */; };
+		D88909301D48495100B208A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FBA7701C602E2700F5455E /* Assets.xcassets */; };
+		D88909321D484CA700B208A9 /* HandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88909311D484CA700B208A9 /* HandViewController.swift */; };
+		D88909341D48534100B208A9 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88909331D48534100B208A9 /* ResultsViewController.swift */; };
+		D88909361D4857B200B208A9 /* Choices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88909351D4857B100B208A9 /* Choices.swift */; };
 		D8EF477D1C798CF6005391C7 /* GameResultInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF477C1C798CF6005391C7 /* GameResultInterfaceController.swift */; };
 		D8EF477E1C798CF6005391C7 /* GameResultInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF477C1C798CF6005391C7 /* GameResultInterfaceController.swift */; };
-		D8EF47801C7992A7005391C7 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF477F1C7992A7005391C7 /* GameState.swift */; };
-		D8EF47811C7992A7005391C7 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF477F1C7992A7005391C7 /* GameState.swift */; };
 		D8FBA75A1C602E2700F5455E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FBA7591C602E2700F5455E /* AppDelegate.swift */; };
-		D8FBA75C1C602E2700F5455E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FBA75B1C602E2700F5455E /* ViewController.swift */; };
 		D8FBA75F1C602E2700F5455E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FBA75D1C602E2700F5455E /* Main.storyboard */; };
 		D8FBA7611C602E2700F5455E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FBA7601C602E2700F5455E /* Assets.xcassets */; };
 		D8FBA7641C602E2700F5455E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FBA7621C602E2700F5455E /* LaunchScreen.storyboard */; };
@@ -71,11 +74,13 @@
 
 /* Begin PBXFileReference section */
 		D82966031C7D70FF00CDEF23 /* Hands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hands.swift; path = "RockPaperScissors WatchKit Extension/Hands.swift"; sourceTree = SOURCE_ROOT; };
+		D889092E1D48403300B208A9 /* HandSelectPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandSelectPageViewController.swift; sourceTree = "<group>"; };
+		D88909311D484CA700B208A9 /* HandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HandViewController.swift; path = ../HandViewController.swift; sourceTree = "<group>"; };
+		D88909331D48534100B208A9 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		D88909351D4857B100B208A9 /* Choices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choices.swift; sourceTree = "<group>"; };
 		D8EF477C1C798CF6005391C7 /* GameResultInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResultInterfaceController.swift; sourceTree = "<group>"; };
-		D8EF477F1C7992A7005391C7 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		D8FBA7561C602E2700F5455E /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FBA7591C602E2700F5455E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8FBA75B1C602E2700F5455E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8FBA75E1C602E2700F5455E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8FBA7601C602E2700F5455E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8FBA7631C602E2700F5455E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -132,9 +137,12 @@
 		D8FBA7581C602E2700F5455E /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
+				D88909311D484CA700B208A9 /* HandViewController.swift */,
+				D88909351D4857B100B208A9 /* Choices.swift */,
 				D8FBA7591C602E2700F5455E /* AppDelegate.swift */,
-				D8FBA75B1C602E2700F5455E /* ViewController.swift */,
 				D8FBA75D1C602E2700F5455E /* Main.storyboard */,
+				D88909331D48534100B208A9 /* ResultsViewController.swift */,
+				D889092E1D48403300B208A9 /* HandSelectPageViewController.swift */,
 				D8FBA7601C602E2700F5455E /* Assets.xcassets */,
 				D8FBA7621C602E2700F5455E /* LaunchScreen.storyboard */,
 				D8FBA7651C602E2700F5455E /* Info.plist */,
@@ -158,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				D8FBA77C1C602E2700F5455E /* InterfaceController.swift */,
-				D8EF477F1C7992A7005391C7 /* GameState.swift */,
 				D8FBA77E1C602E2700F5455E /* ExtensionDelegate.swift */,
 				D8FBA7801C602E2700F5455E /* Assets.xcassets */,
 				D8FBA7821C602E2700F5455E /* Info.plist */,
@@ -234,9 +241,11 @@
 				TargetAttributes = {
 					D8FBA7551C602E2700F5455E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = B7ES5QUQAV;
 					};
 					D8FBA7671C602E2700F5455E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = B7ES5QUQAV;
 					};
 					D8FBA7761C602E2700F5455E = {
 						CreatedOnToolsVersion = 7.2;
@@ -271,6 +280,7 @@
 			files = (
 				D8FBA7641C602E2700F5455E /* LaunchScreen.storyboard in Resources */,
 				D8FBA7611C602E2700F5455E /* Assets.xcassets in Resources */,
+				D88909301D48495100B208A9 /* Assets.xcassets in Resources */,
 				D8FBA75F1C602E2700F5455E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8652B291D3F587200B21F23 /* Assets.xcassets in Resources */,
 				D8FBA7811C602E2700F5455E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,11 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8FBA75C1C602E2700F5455E /* ViewController.swift in Sources */,
-				D8EF47801C7992A7005391C7 /* GameState.swift in Sources */,
 				D8EF477D1C798CF6005391C7 /* GameResultInterfaceController.swift in Sources */,
+				D88909321D484CA700B208A9 /* HandViewController.swift in Sources */,
 				D82966041C7D70FF00CDEF23 /* Hands.swift in Sources */,
 				D8FBA75A1C602E2700F5455E /* AppDelegate.swift in Sources */,
+				D88909361D4857B200B208A9 /* Choices.swift in Sources */,
+				D889092F1D48403300B208A9 /* HandSelectPageViewController.swift in Sources */,
+				D88909341D48534100B208A9 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +325,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8FBA77F1C602E2700F5455E /* ExtensionDelegate.swift in Sources */,
-				D8EF47811C7992A7005391C7 /* GameState.swift in Sources */,
 				D8EF477E1C798CF6005391C7 /* GameResultInterfaceController.swift in Sources */,
 				D82966051C7D70FF00CDEF23 /* Hands.swift in Sources */,
 				D8FBA77D1C602E2700F5455E /* InterfaceController.swift in Sources */,
@@ -481,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = RockPaperScissors_WatchKit_Extension;
 				INFOPLIST_FILE = "RockPaperScissors WatchKit App/Info.plist";
@@ -497,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = RockPaperScissors_WatchKit_Extension;
 				INFOPLIST_FILE = "RockPaperScissors WatchKit App/Info.plist";
@@ -513,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RockPaperScissors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nfulkerson.RockPaperScissors;
@@ -524,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RockPaperScissors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nfulkerson.RockPaperScissors;
